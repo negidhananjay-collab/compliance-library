@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US Mandatory PTO & Statutory Compliance Library</title>
+  <meta name="description" content="Central Knowledge Base for US Mandatory Paid Time Off, Paid Sick Leave Ordinances, and State Compliance Rules." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div>
+        <h1>⚖️ Compliance Answer Desk &mdash; Knowledge Library</h1>
+        <p class="subtitle">Authoritative repository of US Mandatory PTO, Paid Sick Leave & Statutory Employment Regulations</p>
+      </div>
+      <div class="badge-status">Copilot Grounding Ready • Clean Semantic HTML</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Notice for Copilot Crawler -->
+    <div class="info-banner">
+      <strong>Knowledge Source Notice:</strong> This webpage contains semantic legal tables indexed directly for AI Copilot Agents and Compliance Teams. You can view, search, add, or upload spreadsheets below.
+    </div>
+
+    <!-- Upload & Action Toolbar -->
+    <section class="toolbar-section">
+      <div class="toolbar-card">
+        <h3>📂 Upload & Manage Spreadsheets</h3>
+        <p>Want to add new compliance laws? Upload any <code>.csv</code> or spreadsheet export file here. It will immediately render on this page, allowing you to edit cells, add rows, and export.</p>
+
+        <div class="upload-controls">
+          <label class="btn btn-primary" for="fileInput">
+            📤 Upload CSV / Sheet
+          </label>
+          <input type="file" id="fileInput" accept=".csv, .txt, .tsv" style="display: none;" />
+          <button id="addManualRowBtn" class="btn btn-secondary">➕ Add New Law / Row</button>
+          <button id="exportCsvBtn" class="btn btn-outline">💾 Download CSV / Excel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search / Filter Bar -->
+    <div class="search-bar-container">
+      <input type="text" id="searchInput" placeholder="🔍 Search by state, county, ordinance, accrual rate, or keyword..." />
+    </div>
+
+    <!-- Active Statutory Knowledge Base Table (Fully crawlable semantic HTML) -->
+    <section class="table-container">
+      <div class="table-header-info">
+        <h2 id="activeTableTitle">Statutory PTO & Paid Sick Leave Library (USA)</h2>
+        <span id="rowCountBadge" class="count-badge">7 Jurisdictions Listed</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="complianceTable">
+          <thead>
+            <tr>
+              <th>Jurisdiction / Locality</th>
+              <th>Effective Date / Status</th>
+              <th>Statutory Code / Law</th>
+              <th>Covered Employers</th>
+              <th>Covered Employees</th>
+              <th>Accrual Rate & Minimums</th>
+              <th>Usage Waiting Period</th>
+              <th>Annual Carryover Limit</th>
+              <th>Permitted Reasons / Notes</th>
+              <th>Separation Payout Required?</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="complianceTableBody">
+            <!-- Row 1: Cook County -->
+            <tr>
+              <td contenteditable="true"><strong>Cook County, Illinois</strong></td>
+              <td contenteditable="true">Dec 31, 2023 / Jan 1, 2024</td>
+              <td contenteditable="true">Cook County Paid Leave Ordinance (No. 24-0583)</td>
+              <td contenteditable="true">All employers with at least 1 employee in Cook County</td>
+              <td contenteditable="true">Employees working at least 80 hours in any 120-day period within Cook County</td>
+              <td contenteditable="true">1 hour per 40 hours worked; minimum accrual up to 40 hours per 12-month period</td>
+              <td contenteditable="true">Accrues Day 1; eligible to use on the 90th calendar day of employment</td>
+              <td contenteditable="true">Up to 40 hours of unused accrued leave carries over unless frontloaded with 40+ hours</td>
+              <td contenteditable="true">Any reason; employers may not require documentation or reason certification</td>
+              <td contenteditable="true">No statutory payout upon separation unless mandated in employment agreement/CBA</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+
+            <!-- Row 2: City of Chicago -->
+            <tr>
+              <td contenteditable="true"><strong>City of Chicago, Illinois</strong></td>
+              <td contenteditable="true">July 1, 2024</td>
+              <td contenteditable="true">Chicago Paid Leave & Paid Sick/Safe Leave Ordinance (MCC Title 6-130)</td>
+              <td contenteditable="true">Any employer with 1+ covered employee in Chicago</td>
+              <td contenteditable="true">Employees working at least 80 hours in a 120-day period in Chicago</td>
+              <td contenteditable="true">Dual Accrual: 1 hr Paid Leave per 35 hrs worked + 1 hr Paid Sick Leave per 35 hrs worked (up to 40 hrs each)</td>
+              <td contenteditable="true">Accrues Day 1. Paid Leave usable after 90 days; Paid Sick Leave usable after 30 days</td>
+              <td contenteditable="true">Up to 16 hours generic Paid Leave + up to 80 hours Paid Sick Leave carryover annually</td>
+              <td contenteditable="true">Paid leave: any reason. Paid sick leave: personal/family illness, safety/domestic violence</td>
+              <td contenteditable="true">Medium employers (51-100): phased payout up to 16 hrs; Large (101+): full payout of generic PTO; Sick leave not paid out</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+
+            <!-- Row 3: Illinois Statewide -->
+            <tr>
+              <td contenteditable="true"><strong>Illinois (Statewide)</strong></td>
+              <td contenteditable="true">January 1, 2024</td>
+              <td contenteditable="true">Paid Leave for All Workers Act (PLAWA) (820 ILCS 192)</td>
+              <td contenteditable="true">All private employers in Illinois (unless covered by pre-existing qualified local ordinance)</td>
+              <td contenteditable="true">Nearly all employees, including domestic, part-time, temporary, and seasonal workers</td>
+              <td contenteditable="true">1 hour per 40 hours worked, capped at 40 hours minimum per 12-month benefit period</td>
+              <td contenteditable="true">Accrues Day 1; eligible to use starting on the 90th day of employment</td>
+              <td contenteditable="true">Up to 40 hours carryover required unless employer frontloads 40 hours at year start</td>
+              <td contenteditable="true">Usable for any reason; employer cannot require documentation, verification, or reason</td>
+              <td contenteditable="true">No payout required under PLAWA unless governed by general vacation terms under Wage Payment Act</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+
+            <!-- Row 4: Nevada Statewide -->
+            <tr>
+              <td contenteditable="true"><strong>Nevada (Statewide)</strong></td>
+              <td contenteditable="true">January 1, 2020</td>
+              <td contenteditable="true">Nevada Revised Statutes (NRS § 608.0197)</td>
+              <td contenteditable="true">Private employers with 50 or more employees (exempts first 2 years of employer operation)</td>
+              <td contenteditable="true">All employees (full-time, part-time, temporary) working in Nevada</td>
+              <td contenteditable="true">0.01923 hours per hour worked (approx 40 hours annually for 40 hr/week employee)</td>
+              <td contenteditable="true">Accrues Day 1; eligible to use on the 90th calendar day of employment</td>
+              <td contenteditable="true">Up to 40 hours carryover permitted per benefit year unless frontloaded by employer</td>
+              <td contenteditable="true">Any reason without requiring explanation or justification to employer</td>
+              <td contenteditable="true">No statutory payout requirement upon separation unless employer contract promises it</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+
+            <!-- Row 5: California Statewide -->
+            <tr>
+              <td contenteditable="true"><strong>California (Statewide)</strong></td>
+              <td contenteditable="true">Updated January 1, 2024</td>
+              <td contenteditable="true">Healthy Workplaces, Healthy Families Act (SB 616 / Cal. Lab. Code § 246)</td>
+              <td contenteditable="true">All employers regardless of size</td>
+              <td contenteditable="true">Employees who work 30+ days within California within a 12-month period</td>
+              <td contenteditable="true">1 hour per 30 hours worked; minimum statutory cap raised to 40 hours (5 days) per year</td>
+              <td contenteditable="true">Accrues Day 1; eligible to use on 90th day of employment</td>
+              <td contenteditable="true">Carryover of up to 80 hours (10 days) required unless frontloaded with 40 hours/5 days annually</td>
+              <td contenteditable="true">Diagnosis, care, or treatment of existing health condition; preventive care; domestic safety</td>
+              <td contenteditable="true">Paid sick leave is not payable upon separation (unless combined into general PTO bank)</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+
+            <!-- Row 6: New York Statewide -->
+            <tr>
+              <td contenteditable="true"><strong>New York (Statewide)</strong></td>
+              <td contenteditable="true">September 30, 2020</td>
+              <td contenteditable="true">New York State Paid Sick Leave Law (NY Labor Law § 196-b)</td>
+              <td contenteditable="true">All private employers across NY state with tiers based on net income and employee headcount</td>
+              <td contenteditable="true">All private sector employees in NY state</td>
+              <td contenteditable="true">1 hour per 30 hours worked (Cap: 40 hrs for &lt;100 employees; 56 hrs for 100+ employees)</td>
+              <td contenteditable="true">Accrues Day 1; usable immediately upon accrual (no statutory 90-day waiting period)</td>
+              <td contenteditable="true">All unused leave must be carried over; usage may be capped at 40 or 56 hours per year</td>
+              <td contenteditable="true">Mental/physical illness, injury, preventive diagnosis, family care, domestic violence/safety</td>
+              <td contenteditable="true">No payout required upon separation unless required by employer policy</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+
+            <!-- Row 7: Washington Statewide -->
+            <tr>
+              <td contenteditable="true"><strong>Washington (Statewide)</strong></td>
+              <td contenteditable="true">January 1, 2018</td>
+              <td contenteditable="true">Washington Paid Sick Leave Law (RCW 49.46.210)</td>
+              <td contenteditable="true">All employers with non-exempt employees in Washington State</td>
+              <td contenteditable="true">All non-exempt employees covered by the Washington Minimum Wage Act</td>
+              <td contenteditable="true">1 hour per 40 hours worked (no statutory annual accrual cap)</td>
+              <td contenteditable="true">Eligible to use on the 90th calendar day of employment</td>
+              <td contenteditable="true">Up to 40 hours of unused accrued leave carries over to the following year</td>
+              <td contenteditable="true">Illness, medical appointments, family care, public health closure of business/school, domestic violence</td>
+              <td contenteditable="true">Payout upon separation is not mandated by state law</td>
+              <td class="action-cell"><button class="btn-delete" title="Delete Row">✕</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Instructions on how to add files & update GitHub -->
+    <section class="help-section">
+      <h3>💡 How to update this library for your Copilot Agent</h3>
+      <ol>
+        <li><strong>On the webpage itself:</strong> Click directly into any table cell to edit text, or click <em>"Upload CSV / Sheet"</em> to load a new sheet right into the view. Click <em>"Download CSV / Excel"</em> anytime to save a copy.</li>
+        <li><strong>For permanent Copilot updates:</strong> Because Copilot reads GitHub Pages directly from the web, whenever you have new laws or files to permanently save, open your <code>index.html</code> in your GitHub repo, add your new rows or paste your updated table, and click commit! Copilot will crawl the new laws immediately.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; Compliance Answer Desk &bull; Legal & Regulatory Knowledge Base</p>
+      <p>Optimized for AI Agents, Copilot Studio Grounding & Web Crawlers</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
